@@ -10,7 +10,8 @@ io.on('connection', function(socket) {
     console.log("User connected via socket.io!");
     
      socket.emit('message', {
-        text : "Welcome to the chat application.",
+        name: 'System', 
+        text : 'Welcome to the chat application.',
         timestamp: moment().valueOf()
     });
     
